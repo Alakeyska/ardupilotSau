@@ -1,0 +1,20 @@
+description: >
+  Support for the Logicool F710 joystick.
+match:
+  - 'Logitech Gamepad F710'
+controls:
+  - channel: 1
+    type: axis
+    id: 3
+  - channel: 2
+    type: axis
+    id: 4
+  - channel: 3
+    type: axis
+    id: 1
+    invert: true
+  - channel: 4
+    type: axis
+    id: 0
+
+
