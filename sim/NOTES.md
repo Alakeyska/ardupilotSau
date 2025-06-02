@@ -92,3 +92,23 @@ module load joystick
 3. Добавить в Tools/autotest/locations.txt координаты в формате: latitude,longitude,absolute-altitude,heading. Например координаты аэропорта Пулково для полосы 10L/28R (основной):
 - 10L (при взлёте на запад): 59.806667, 30.265000, 24, 100
 - 28R (при взлёте на восток):59.796944, 30.308056, 24, 280
+
+# Изменение камеры по дефолту (https://wiki.flightgear.org/Howto:Configure_views_in_FlightGear)
+Изменить view в Rascal110-JSBSim-set.xml
+
+# Добавить свой самолет в SITL по типу plane-3d
+sim_vehicle.py -v ArduPlane -L $AIRPORT --enable-fgview --console --map --mavproxy-args="--load-module=joystick"
+
+Removing target_list file /home/alakey/work/ardupilotSau/build/sitl/target_list
+'configure' finished successfully (1.094s)
+{'waf_target': 'bin/arduplane', 'default_params_filename': 'models/plane.parm', 'model': 'plane', 'sitl-port': True}
+SIM_VEHICLE: Building
+SIM_VEHICLE: "/home/alakey/work/ardupilotSau/modules/waf/waf-light" "build" "--target" "bin/arduplane"
+Waf: Entering directory `/home/alakey/work/ardupilotSau/build/sitl'
+
+
+/start_sim_vehicle.sh
+{'waf_target': 'bin/arduplane', 'default_params_filename': [], 'model': 'plane-3d', 'sitl-port': True}
+SIM_VEHICLE: Building
+SIM_VEHICLE: "/home/alakey/work/ardupilotSau/modules/waf/waf-light" "build" "--target" "bin/arduplane"
+Waf: Entering directory `/home/alakey/work/ardupilotSau/build/sitl'
