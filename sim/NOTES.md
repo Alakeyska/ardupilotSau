@@ -48,7 +48,7 @@ FBWA> mode circle
 import MAVProxy
 print(MAVProxy.__file__)
 ```
-
+/home/$USER/.local/lib/python3.10/site-packages/MAVProxy/modules/mavproxy_joystick/joysticks
 туда положить файл `logitech-f710.yml`
 
 ```yml
